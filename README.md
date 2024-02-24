@@ -11,6 +11,12 @@
     # sales_by_sky.csv
     # sales_report.csv
 
+# Project Description
+  # Extracting data from a SQL database
+  # Cleaning, transforming and analyzing data
+  # Loading data into a database
+  # Developing and implementing a QA process to validate transformed data against raw data
+
 # Project Instructions
   # Part 1: Loading csv Files into Database
     # Create Database (dB) called "ecommerce"
