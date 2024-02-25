@@ -46,6 +46,29 @@
   # 6. schema.png file
     # This file should contain the ERD of the database
 
+# Evaluation Ruberic
+  # SQL
+    # Implements advanced SQL techniques/skills
+      # (i.e. changing data type or creating custom field within SQL query)
+  # Data Acquisition
+    # Finds relevant data sources with thought given to source reliability and the data quality.
+    # Parses data efficiently
+  # Data Audit
+    # Identifies potential issues with quality and quantity of data and fixes issues at the source of the data .
+    # Generates hypothesis of what can be done with the data.
+  # Data Cleaning
+    # Thinks beyond basic data cleaning techniques to consider additional data issues
+    # (i.e. capitalization of text)
+  # Tool Installation & Set Up
+    # Recommends problem specific tools and can set up any tool stack required.
+  # Coding Comprehension
+    # Comments code using best practices for variable names, syntax etc.
+    # Further explanation of code is not required.
+  # Organization
+    # README.md is well written, easily understood, and precise instructions are included.
+    # Files created can easily be shared with others.
+    # File organization allows for easy collaboration with others.
+
 ## Project/Goals
 (fill in your description and goals here)
 
