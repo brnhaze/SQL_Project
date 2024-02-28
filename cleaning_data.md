@@ -63,4 +63,28 @@ E.g., SELECT column_name, data_type, is_nullable
 - There were 3300 count for NULL values
 
 3. pageviews FROM all_sessions
+- Contained no NULL values but table schema stated null value syntax stated "YES"
+
+4. sessionqualitydim FROM all_sessions
+- NULL values counted for 13906
+- unknown understanding what sessionqualitydim was nor could identify when viewing other columns
+	- session quality dimension could be an estimate of a session so associated to columns time and timeonsite
+ - Chose values to by datatype integer because I did not see any numeric, ratio, etc...
+ - large difference in DISTINCT values
+	- sessionqualitydim 1 showed high disproportion of 988 to value 2 of 109
+ 
+ 5. date FROM all_sessions
+- Contained no NULL values but table schema stated null value syntax stated "YES"
+
+6. visitid FROM all_sessions
+- Contained no NULL values but table schema stated null value syntax stated "YES"
+- visitid digit count was 10
+	- I could not eliminate any numbers from sequence (begginning, middle, or end) to shorten it.
+ - duplicate values contained so cannot use as PRIMARY KEY
+
+7. productrefundamount FROM all_sessions
+- All NULL values
+- Other columns such as productquantity, productprice, and productrevenue did not give values indicating productrefundamount was important. Can delete column however users may add values.
+
+8. productquantity FROM all_sessions
 - 
