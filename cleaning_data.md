@@ -15,9 +15,7 @@ Example: See csv file "0 remove quote indent.sql" for more examples.
   RENAME COLUMN "fullVisitorId" TO fullVisitorId
 
 2. Identified schema of ecommerce database and its tables.
-- Identifying problems with the schema and observing duplicate and unique values helped decide on PRIMARY and FOREIGN KEYS. 
-
-Commmands and details can be found in 3 Data Profiling_Validation_Cleansing.sql
+2. a. Commmands and details can be found in 3 Data Profiling_Validation_Cleansing.sql
 
 Some Examples:
 
@@ -29,22 +27,17 @@ Some Examples:
 	FROM information_schema.columns
 	WHERE table_name = 'all_sessions'
 
- all_sessions
- - Created column "id" because fullvisitorid and visitorid contained duplicate values
+2. b. Identifying problems with the schema and observing duplicate and unique values helped decide on PRIMARY and FOREIGN KEYS. 
 
- analytics
- - Created column "id" because fullvisitorid, visitnumber, userid, and visitid contained null values or duplicate values.
+- PRIMARY and FOREIGN KEYS:
+ - all_sessions
+ - country_currency
+ - analytics
+ - intermediate_table
+ - products
+ - sales_by_sku
+ - sales_report
 
- products
- - sku was chosen as the primary key
-
- sales_by_sku
- - productssku was chosen as the primary key
- - FOREIGN KEY productsku referencing sales_report productsku
-
- sales_report
- - productsku was chosen as a primary key
- - FOREIGN KEY productsku referencing sales_report productsku
 
 ## Data Profiling, Validating, and Cleaning of Queries and Problems:
   (Below, provide the SQL queries you used to clean your data.)
