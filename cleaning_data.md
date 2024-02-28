@@ -72,6 +72,7 @@ E.g., SELECT column_name, data_type, is_nullable
  - Chose values to by datatype integer because I did not see any numeric, ratio, etc...
  - large difference in DISTINCT values
 	- sessionqualitydim 1 showed high disproportion of 988 to value 2 of 109
+ - column name can be shortened, e.g., sess_dim
  
  5. date FROM all_sessions
 - Contained no NULL values but table schema stated null value syntax stated "YES"
@@ -84,7 +85,21 @@ E.g., SELECT column_name, data_type, is_nullable
 
 7. productrefundamount FROM all_sessions
 - All NULL values
-- Other columns such as productquantity, productprice, and productrevenue did not give values indicating productrefundamount was important. Can delete column however users may add values.
+- Other columns such as productquantity, productprice, and productrevenue did not give values indicating productrefundamount was important.
+- Can delete column however users may add values.
 
 8. productquantity FROM all_sessions
-- 
+- 15081 NULL values out of total and 53 NOT NULL, assuming NULL means out of stock
+	- There were no 0 quantity
+   	- If, NULL means out of stock, then should change to 0 ... need clarification before changing
+   	- product could be out of stock or discontinued, etc...
+
+9. productprice FROM all_sessions
+- Contained no NULL values but table schema stated null value syntax stated "YES"
+- datatype NUMERIC values were all divided by 1000000.00 to make sense associated to v2productname
+	- ROUNDED function used
+ - productprice 0.00 for 14758 count found. Changed to NULL values.
+	- prices should be inputted by user
+   	- some v2productnames could be duplicates, one may have different prices.
+
+10. productrevenue FROM all_sessions
