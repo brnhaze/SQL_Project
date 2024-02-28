@@ -31,12 +31,37 @@ Some Examples:
 
 - PRIMARY and FOREIGN KEYS:
  - all_sessions
+	- PRIMARY KEY:
+   		- id (created)
+	- FOREIGN KEY:
+		- country to country in country_currency
+  		- date to date in analytics  
  - country_currency
+ 	- PRIMARY KEY:
+   	- FOREIGN KEY: 
  - analytics
+  	- PRIMARY KEY:
+   		- id (created)
+   	- FOREIGN KEY:
+   		- visitnumber to visitnumber in intermediate_table
  - intermediate_table
+  	- PRIMARY KEY:
+   	- FOREIGN KEY:
+   		- visitnumber to visitnumber in analytics
  - products
+  	- PRIMARY KEY:
+   		- sku
+   	- FOREIGN KEY:
+   		-  sku to productsku in sales_by_sku
  - sales_by_sku
+  	- PRIMARY KEY:
+   		- productsku
+   	- FOREIGN KEY:
+   		- productsku to productsku in sales_report
  - sales_report
+  	- PRIMARY KEY:
+   		- productsku
+   	- FOREIGN KEY:
 
 
 ## Data Profiling, Validating, and Cleaning of Queries and Problems:
