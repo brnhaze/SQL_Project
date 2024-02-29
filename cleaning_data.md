@@ -48,6 +48,7 @@ Some Examples:
   	- PRIMARY KEY:
    	- FOREIGN KEY:
    		- visitnumber to visitnumber in analytics
+   	 	  visitnumber to visitnumer in products 
  - products
   	- PRIMARY KEY:
    		- sku
