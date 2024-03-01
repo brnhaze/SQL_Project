@@ -143,4 +143,5 @@ Some Examples:
 		WHERE name IS NOT NULL
 
 ### Other Columns
-1. 
+See uploaded csv file: 3 Data Profiling_Validation_Cleansing.sql
+	Path: 
