@@ -46,6 +46,7 @@ Answer:
 
 
 
+
 Question 3: What are the top 5 products with the highest total orders
 
 SQL Queries:
@@ -56,6 +57,7 @@ SQL Queries:
   LIMIT 5
 
 Answer: productsku GGOEGOAQ012899 total_ordered was 456
+
 
 
 
@@ -70,8 +72,22 @@ Answer: Average sentiment score .39 and average sentiment magnitude .81
 
 
 
-Question 5: 
+
+Question 5: Calculate Standard Deviation and Variance for total ordered based on unit price of products
 
 SQL Queries:
 
+  SELECT 
+    STDDEV(total_ordered) AS std_dev,
+    VARIANCE(total_ordered) AS var
+FROM 
+  (
+    SELECT sr.total_ordered, an.unit_price
+    FROM sales_report AS sr
+    JOIN analytics AS an USING(id)) AS aaa
+
 Answer:
+- Standard Deviation: 41.72
+  - total ordered is on average 41.72 per unit away from the mean
+- Variance: 1740.90
+  - The average spread of values from the mean
