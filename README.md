@@ -71,6 +71,9 @@
 
 ## Project/Goals
 (fill in your description and goals here)
+- Create a functioning database with relationships
+- Clean the data
+- Query and answer questons easily
 
 ## Process
 ### (your step 1)
@@ -81,6 +84,15 @@
 
 ## Challenges 
 (discuss challenges you faced in the project)
+- Creating relationships was difficult; I had to review and had a chat with Alibek
+  - I chose to create Intermediate Tables to complete this task.
+- Some columns such as productSKU and sku were difficult to eliminate characters to create a shortened unique value.
+- I did not understand what some of the questions were asking.
+- I had a difficult time trying to remember or choose what form syntax.
+  - Failed at many but kept trying until working.
+- Still having a hard time distinguishing which Subqueries to use and writing CTE's for questions I did not understand was not easy.
 
 ## Future Goals
 (what would you do if you had more time?)
+- I would like to be able to write more user-defined scripts. The one I wrote was not easy but I managed after watching some Youtube videos.
+- Practicse using different functions and being able to recognize which windows-function may be best.
