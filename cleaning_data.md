@@ -68,28 +68,79 @@ Some Examples:
 ### Used Columns
 1. Identifying schemas of tables and their datatypes and Null values showed errors
 
-E.g., SELECT column_name, data_type, is_nullable
-	FROM information_schema.columns
-	WHERE table_name = 'all_sessions'
+	E.g., SELECT column_name, data_type, is_nullable
+		FROM information_schema.columns
+		WHERE table_name = 'all_sessions'
   
-  The schema stated either NO or YES to null values but when checking these columns using SELECT statement showed the  opposite at times.
+ 	 The schema stated either NO or YES to null values but when checking these columns using SELECT statement showed the  opposite at times.
 
 2. all_sessions
+
 	2. a. city
+		
+  		UPDATE all_sessions
+		SET city = NULL
+		WHERE city = 'not available in demo dataset'
+
+		UPDATE all_sessions
+		SET city = NULL
+		WHERE city = '(not set)'
+	
  	2. b. country
+
+		UPDATE all_sessions
+		SET country = NULL
+		WHERE country = '(not set)'
+
   	2. c. transactionrevenue
+
+		UPDATE all_sessions
+		SET transactionrevenue = transactionrevenue/1000000
+
+		UPDATE all_sessions
+		SET transactionrevenue = ROUND(transactionrevenue, 2)
+
   	2. d. fullvisitorid
+		
+		UPDATE all_sessions
+		SET fullvisitorid = LEFT(fullvisitorid::TEXT, LENGTH(fullvisitorid::TEXT) - 12)::NUMERIC
+		WHERE fullvisitorid IS NOT NULL
+
+		ALTER TABLE all_sessions
+		ALTER COLUMN fullvisitorid SET DATA TYPE INTEGER USING fullvisitorid::INTEGER
+
    	2. e. v2productcategory
-   	3. f. productprice
-3. analytics
-4. products
-	4. a. orderedquantity 
-5. sales_by_sku
-	5. a. total_ordered
-6. sales_report
-	6. a. productsku
- 	6. b. total_ordered
-  	6. c. name
+
+		UPDATE all_sessions
+		SET v2productcategory = NULL
+		WHERE v2productcategory IS NOT NULL AND v2productcategory = '(not set)'
+
+   	2. f. productprice
+
+     		UPDATE all_sessions
+		SET productprice = productprice/1000000
+
+		UPDATE all_sessions
+		SET productprice = ROUND(productprice, 2)
+
+		UPDATE all_sessions
+		SET productprice = NULL
+		WHERE productprice = '0.00'
+
+3. sales_report
+
+	3. a. productsku
+
+		SELECT productsku,
+		LEFT(productsku, 3) = 'GGO' AS three,
+		LEFT(productsku, 4) = 'GGOE' AS four
+		FROM sales_by_sku WHERE productsku IS NOT NULL
+
+  	3. c. name
+
+		UPDATE sales_report
+		SET name = LTRIM(name)
+		WHERE name IS NOT NULL
 
 ### Other Columns
 1. 
