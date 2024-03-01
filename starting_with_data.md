@@ -46,19 +46,27 @@ Answer:
 
 
 
-Question 3: 
+Question 3: What are the top 5 products with the highest total orders
+
+SQL Queries:
+  
+  SELECT productsku, total_ordered
+  FROM sales_report
+  ORDER BY total_ordered DESC
+  LIMIT 5
+
+Answer: productsku GGOEGOAQ012899 total_ordered was 456
+
+
+
+Question 4: Question: What is the average sentiment score and magnitude for all products?
 
 SQL Queries:
 
-Answer:
+  SELECT ROUND(AVG(sentimentscore),2) AS avg_sentimentscore, ROUND(AVG(sentimentmagnitude),2) AS avg_sentimentmagnitude
+  FROM sales_report
 
-
-
-Question 4: 
-
-SQL Queries:
-
-Answer:
+Answer: Average sentiment score .39 and average sentiment magnitude .81
 
 
 
