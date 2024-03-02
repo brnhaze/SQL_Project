@@ -91,3 +91,36 @@
   - total ordered is on average 41.72 per unit away from the mean
 - Variance: 1740.90
   - The average spread of values from the mean
+
+## Question 6: Create csv file named country_currency.csv, import country column, create currencycode with valuess into currency code; Create table and upload; and create script to enter currencycode data correspondng to country column in all_sessions table.
+
+  CREATE TABLE IF NOT EXISTS country_currency (
+      country VARCHAR(255),
+      currencycode VARCHAR(255)
+  );
+  
+  -- Import csv file country_currency.csv
+  
+  User-Defined Function
+
+    CREATE OR REPLACE FUNCTION update_currency_code()
+    RETURNS VOID AS $$
+    DECLARE
+        country_rec RECORD;
+    BEGIN
+        FOR country_rec IN (SELECT country, currencycode FROM country_currency) LOOP
+            -- Update all_sessions table with the corresponding currency code
+            UPDATE all_sessions
+            SET currencycode = country_rec.currencycode
+            WHERE country = country_rec.country;
+        END LOOP;
+    END;
+    $$ LANGUAGE plpgsql;
+
+  SELECT * FROM country_currency
+
+  See country_currency.csv
+
+  See country_currency_image.jpg
+
+  
