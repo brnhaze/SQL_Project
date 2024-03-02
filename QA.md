@@ -100,6 +100,32 @@
 	FROM sales_report AS sr;
 
 ### Query 2 Option
-#### COUNT and Duplicate Values
-#### Validation QUery
-#### 
+#### COUNT, Duplicate, and NULL Values and Validation Query
+- COUNT and Identify Duplicate Values
+	- list of duplicates based on the productsku and productnames from all databases
+ 	-  Occurences: how many times each duplicate appeared
+
+	WITH cte AS (
+	SELECT ass.productsku, ass.v2productname AS productname
+	FROM all_sessions AS ass
+	UNION ALL
+	SELECT p.name, p.sku AS productsku
+	FROM products AS p
+	UNION ALL
+	SELECT sbs.productsku, NULL AS productname
+	FROM sales_by_sku AS sbs
+	UNION ALL
+	SELECT sr.name, sr.productsku AS productsku
+	FROM sales_report AS sr
+	)
+	SELECT productname, productsku, COUNT(*) AS occurences FROM cte
+	WHERE productname IS NOT NULL
+		AND productsku IS NOT NULL
+	GROUP BY productname, productsku
+	HAVING COUNT(*) > 1
+	ORDER BY occurences DESC, productsku, productname
+
+ - See image QA_1
+ - Citation: "occurences" idea taken from (https://chat.openai.com/)
+
+## 
