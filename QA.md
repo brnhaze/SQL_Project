@@ -85,7 +85,9 @@
 	JOIN sales_by_sku AS sbs USING(id)
 	JOIN sales_report AS sr USING(id)
 	
-	SELECT ass.productsku, ass.v2productname
+### Query 2	
+
+ 	SELECT ass.productsku, ass.v2productname
 	FROM all_sessions AS ass
 	UNION ALL
 	SELECT p.name, p.sku
@@ -97,16 +99,3 @@
 	SELECT sr.name, sr.productsku
 	FROM sales_report AS sr;
 
-### Query 2
-
-	SELECT * FROM all_sessions
-	
-	SELECT fullvisitorid, city, country, currencycode
-	FROM all_sessions
-	WHERE fullvisitorid = 9087906
-	  
-	UPDATE all_sessions
-	SET country = 'USA'
-	WHERE fullvisitorid = 9087906
-
-d
