@@ -1,3 +1,5 @@
+# ******** analytics.csv file was too large -- please use script to create columns: nalytics_too_big_script.sql
+
 # Final-Project-Transforming-and-Analyzing-Data-with-SQL
 
 ## Information
