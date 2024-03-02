@@ -35,6 +35,7 @@
 - Q3_Image.jpg
 - Q4_Image.jpg
 - Q5_Image.jpg
+- QA_1
 
 ## Project Description
   # Extracting data from a SQL database
