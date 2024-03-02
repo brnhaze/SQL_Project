@@ -98,14 +98,30 @@
 (fill in your description and goals here)
 - Create a functioning database with relationships
 - Clean the data
-- Query and answer questons easily
+- Query and answer questions showing understanding of tables and relationships
+- I wanted to understand the databases tables's columns and values, use commands to observe for duplicate, null, and unique values; in turn, create primary and secondary foreign keys to build relationships. I hoped this would have made the query process easier and better to ask and answer questions.
 
 ## Process
 ### (your step 1)
 ### (your step 2)
+1. View .csv files
+2. Find null, duplicate, and unique columns with data
+3. Choose primary and foreign keys
+4. create relationships and or intermediate tables
+5. Attempt answering questions
+6. data profiling, validation, cleansing, and testing (verifying)
+7. Answer or modify questions answers
+8. QA process
+9. Reflection
+10. Answer or modify questions answers
+11. Reflection
 
 ## Results
 (fill in what you discovered this data could tell you and how you used the data to answer those questions)
+- data was all over the place
+  - e.g., multiple productsku and sku with different product names and unit prices.
+- sales_report.csv was chosen as the primary source for some questions
+- It was difficult to build relationsihps with the tables because of the multiple and different values from different columns. Almost seemed as some csv files were from different entities.
 
 ## Challenges 
 (discuss challenges you faced in the project)
