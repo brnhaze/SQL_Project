@@ -7,7 +7,24 @@
 ---------------------------------------------------------------------------------------------------------------------------
 
 # What are your risk areas? Identify and describe them.
-
+1. Completness: failed
+   - missing values (NULL), (not set), and '0', '00:00:00' TIME, YYYY-MM-DD Date values.
+   	- e.g., timeonsite, all_sessions
+   	- city, all_sessions contained 'not available in demo dataset' as value
+3. Validity (confirmity): failed
+   - Missing confirmity and many data values
+   - e.g., productSKU, some values missing 4 to 6 first sequence of Letters 
+5. Accuracy: failed
+   - values did not represent real-world values
+7. Timeliness: failed
+   - data values dates were out-of-date
+   - analytics table took some to query results
+9. Consistency: failed
+    - some values non-english
+    	- e.g., pagetitle, all_sessions 
+11. Uniqueness: failed
+    - Not unique
+    - many duplicate records in dataset
 
 
 # QA Process:
@@ -56,6 +73,40 @@
 ### Conclusion:
 - Fifth character must be a either GGOE('W', 'Y', 'G', 'N', 'Y', 'A') or a without GGOE
 - unsure what to format the 5th character to, remove 5th letter/digit, remove all letters, change entire format and assign new?
+
+## Example: Comparing all products using two different methods
 - some have duplicate values (e.g., "9180751") so cannot remove letter sequences bc productsku can be associated to different orders
 
+### Query 1
 
+	SELECT ass.productsku, ass.v2productname, p.name, p.sku, sbs.productsku, sr.name, sr.productsku
+	FROM all_sessions AS ass
+	JOIN products AS p USING(id)
+	JOIN sales_by_sku AS sbs USING(id)
+	JOIN sales_report AS sr USING(id)
+	
+	SELECT ass.productsku, ass.v2productname
+	FROM all_sessions AS ass
+	UNION ALL
+	SELECT p.name, p.sku
+	FROM products AS p
+	UNION ALL
+	SELECT sbs.productsku, NULL
+	FROM sales_by_sku AS sbs
+	UNION ALL
+	SELECT sr.name, sr.productsku
+	FROM sales_report AS sr;
+
+### Query 2
+
+	SELECT * FROM all_sessions
+	
+	SELECT fullvisitorid, city, country, currencycode
+	FROM all_sessions
+	WHERE fullvisitorid = 9087906
+	  
+	UPDATE all_sessions
+	SET country = 'USA'
+	WHERE fullvisitorid = 9087906
+
+d
