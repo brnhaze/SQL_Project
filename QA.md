@@ -7,22 +7,33 @@
 ---------------------------------------------------------------------------------------------------------------------------
 
 # What are your risk areas? Identify and describe them.
+- Too many examples to choose from, please see 3 Data Profiling_Validation_Cleansing.sql
+
 1. Completness: failed
    - missing values (NULL), (not set), and '0', '00:00:00' TIME, YYYY-MM-DD Date values.
    	- e.g., timeonsite, all_sessions
+   		- SELECT timeonsite FROM all_sessions WHERE timeonsite IS NULL -- 3300 values
+   	 	- SELECT timeonsite FROM all_sessions WHERE timeonsite IS NULL -- 3300 values
    	- city, all_sessions contained 'not available in demo dataset' as value
 3. Validity (confirmity): failed
    - Missing confirmity and many data values
-   - e.g., productSKU, some values missing 4 to 6 first sequence of Letters 
-5. Accuracy: failed
+   - e.g.,
+   	- productSKU, some values missing 4 to 6 first sequence of Letters
+   - e.g.,
+   	- date, all_sessions
+   	- SELECT date, COUNT(*) as occurrence_count FROM all_sessions WHERE NOT date::TEXT != '^\d{4}-\d{2}-\d{2}$' GROUP 		BY date ORDER BY date -- 
+4. Accuracy: failed
    - values did not represent real-world values
-7. Timeliness: failed
+5. Timeliness: failed
    - data values dates were out-of-date
    - analytics table took some to query results
 9. Consistency: failed
-    - some values non-english
-    	- e.g., pagetitle, all_sessions 
-11. Uniqueness: failed
+	- some values non-english
+		- e.g., pagetitle, all_sessions
+	- date, all_sessions
+		- SELECT MIN(date), MAX(date) FROM all_sessions WHERE date IS NOT NULL
+		- MIN "2016-08-01" and MAX "2017-08-01" Range is 365 days many years ago
+10. Uniqueness: failed
     - Not unique
     - many duplicate records in dataset
 
@@ -127,5 +138,3 @@
 
  - See image QA_1
  - Citation: "occurences" idea taken from (https://chat.openai.com/)
-
-## 
