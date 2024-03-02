@@ -99,3 +99,7 @@
 	SELECT sr.name, sr.productsku
 	FROM sales_report AS sr;
 
+### Query 2 Option
+#### COUNT and Duplicate Values
+#### Validation QUery
+#### 
