@@ -144,4 +144,3 @@ Some Examples:
 
 ### Other Columns
 See uploaded csv file: 3 Data Profiling_Validation_Cleansing.sql
-	Path: 
