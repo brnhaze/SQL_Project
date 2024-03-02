@@ -31,22 +31,22 @@ Some Examples:
 
 - PRIMARY and FOREIGN KEYS:
  - all_sessions
-	- PRIMARY KEY:
+	- PRIMARY KEY: id
 	- FOREIGN KEY:
  - analytics
-  	- PRIMARY KEY:
+  	- PRIMARY KEY:id
    	- FOREIGN KEY:
  - intermediate_table
-  	- PRIMARY KEY:
+  	- PRIMARY KEY:id
    	- FOREIGN KEY:
  - products
-  	- PRIMARY KEY:
+  	- PRIMARY KEY:id
    	- FOREIGN KEY:
  - sales_by_sku
-  	- PRIMARY KEY:
+  	- PRIMARY KEY:id
    	- FOREIGN KEY:
  - sales_report
-  	- PRIMARY KEY:
+  	- PRIMARY KEY:id
    	- FOREIGN KEY:
 - I created Intermediate Tables (IT)
 	- IT_1
