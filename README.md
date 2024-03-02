@@ -5,11 +5,36 @@
 - Generated from: lighthouse-labs/Final-Project-SQL
 - Pwd: ~/Documents/Lighthouselabs/Data Analysis/SQL_Project
   - File Path: C:\Users\ashwi\Documents\LighthouseLabs\Data Analysis\SQL_Project\Files\2024-02-23 Part_1
-    - all_sessions.csv
-    - analytics.csv
-    - products.csv
-    - sales_by_sky.csv
-    - sales_report.csv
+
+## CSV Files
+- all_sessions.csv
+- analytics.csv
+- products.csv
+- sales_by_sky.csv
+- sales_report.csv
+- country_currency.csv
+
+## Created Tables
+- country_currency
+- Intermediate Tables
+  - IT_1
+  - IT_2
+  - IT_3
+  - IT_4
+ 
+## Scripts
+- 3 Data Profiling_Validation_Cleansing.sql
+- starting_with_questions.sql
+- 4 country_currencycode_scripting.sql
+- 5 relationships.sql
+
+## Images
+- schema.png
+- Q1_Image.jpg
+- Q2_Image.jpg
+- Q3_Image.jpg
+- Q4_Image.jpg
+- Q5_Image.jpg
 
 ## Project Description
   # Extracting data from a SQL database
