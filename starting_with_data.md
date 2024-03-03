@@ -12,8 +12,13 @@
     UPDATE all_sessions
     SET country = 'USA'
     WHERE fullvisitorid = 9087906
+
+    SELECT fullvisitorid, city, country, currencycode
+  FROM all_sessions
+  WHERE fullvisitorid = 9087906
   
   Answer: USA
+  See starting_with_data_q1.jpg
 
 
 
@@ -39,10 +44,10 @@
     SELECT sr.name, sr.productsku
     FROM sales_report AS sr;
   
-    
-  
   Answer:
   - UNON ALL method was more efficient; I had to deal with the difference in number of columns by using NULL to missing oclumns or informatoin.
+
+  See  See starting_with_data_q2.jpg
 
 
 
@@ -58,6 +63,7 @@
   
   Answer: productsku GGOEGOAQ012899 total_ordered was 456
 
+  See starting_with_data_q3.jpg
 
 
 
@@ -69,6 +75,8 @@
     FROM sales_report
   
   Answer: Average sentiment score .39 and average sentiment magnitude .81
+
+   See starting_with_data_q4.jpg
 
 
 
@@ -91,6 +99,10 @@
   - total ordered is on average 41.72 per unit away from the mean
 - Variance: 1740.90
   - The average spread of values from the mean
+ 
+ See starting_with_data_q5.jpg
+
+
 
 ## Question 6: Create csv file named country_currency.csv, import country column, create currencycode with valuess into currency code; Create table and upload; and create script to enter currencycode data correspondng to country column in all_sessions table.
 
