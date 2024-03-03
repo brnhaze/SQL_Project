@@ -1,4 +1,3 @@
-# ******** analytics.csv file was too large -- please use script to create columns: nalytics_too_big_script.sql
 
 # Final-Project-Transforming-and-Analyzing-Data-with-SQL
 
@@ -11,6 +10,9 @@
 ## CSV Files
 - all_sessions.csv
 - analytics.csv
+  - analytics.csv file was too large
+    - Could not push to github
+    - please use script to create columns: nalytics_too_big_script.sql if needed
 - products.csv
 - sales_by_sky.csv
 - sales_report.csv
