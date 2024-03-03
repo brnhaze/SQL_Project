@@ -14,8 +14,8 @@
     WHERE fullvisitorid = 9087906
 
     SELECT fullvisitorid, city, country, currencycode
-  FROM all_sessions
-  WHERE fullvisitorid = 9087906
+    FROM all_sessions
+    WHERE fullvisitorid = 9087906
   
   Answer: USA
   See starting_with_data_q1.jpg
@@ -88,11 +88,11 @@
     SELECT 
       STDDEV(total_ordered) AS std_dev,
       VARIANCE(total_ordered) AS var
-  FROM 
-    (
-      SELECT sr.total_ordered, an.unit_price
-      FROM sales_report AS sr
-      JOIN analytics AS an USING(id)) AS aaa
+    FROM 
+      (
+        SELECT sr.total_ordered, an.unit_price
+        FROM sales_report AS sr
+        JOIN analytics AS an USING(id)) AS aaa
   
   Answer:
   - Standard Deviation: 41.72
@@ -106,12 +106,12 @@
 
 ## Question 6: Create csv file named country_currency.csv, import country column, create currencycode with valuess into currency code; Create table and upload; and create script to enter currencycode data correspondng to country column in all_sessions table.
 
-  CREATE TABLE IF NOT EXISTS country_currency (
-      country VARCHAR(255),
-      currencycode VARCHAR(255)
-  );
-  
-  -- Import csv file country_currency.csv
+    CREATE TABLE IF NOT EXISTS country_currency (
+        country VARCHAR(255),
+        currencycode VARCHAR(255)
+    );
+    
+    -- Import csv file country_currency.csv
   
   User-Defined Function
 
@@ -129,7 +129,7 @@
     END;
     $$ LANGUAGE plpgsql;
 
-  SELECT * FROM country_currency
+    SELECT * FROM country_currency
 
   See country_currency.csv
 
