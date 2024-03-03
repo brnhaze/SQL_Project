@@ -4,6 +4,8 @@
 ## Information
 - SQL_Project: https://github.com/brnhaze/SQL_Project
 - Generated from: lighthouse-labs/Final-Project-SQL
+- ecommerce database (dB) .csv files:
+  - https://drive.google.com/drive/folders/1anbrJes9Whjes4GUKg2Sx-eD-vVLgcw8?usp=drive_link
 
 ## CSV Files
 - all_sessions.csv
