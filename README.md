@@ -4,8 +4,6 @@
 ## Information
 - SQL_Project: https://github.com/brnhaze/SQL_Project
 - Generated from: lighthouse-labs/Final-Project-SQL
-- Pwd: ~/Documents/Lighthouselabs/Data Analysis/SQL_Project
-  - File Path: C:\Users\ashwi\Documents\LighthouseLabs\Data Analysis\SQL_Project\Files\2024-02-23 Part_1
 
 ## CSV Files
 - all_sessions.csv
