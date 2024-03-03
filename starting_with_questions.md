@@ -15,6 +15,13 @@ SQL Queries:
     
 Answer: See Q1_Image
 
+| city          | country       | Transactionrevenue |
+|:-------------:|:-------------:| :----------------: |
+| null          | United States | 1015.48            |
+| null          | United States | 1005.50            |
+| null          | United States | 200.00             |
+| null          | United States | 167.97             |
+
 - United States Top 5
 - Top 2 cities values not in data set
 - 3rd  city is Sunnyvale
