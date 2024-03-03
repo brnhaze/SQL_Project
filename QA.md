@@ -33,6 +33,11 @@
 	- date, all_sessions
 		- SELECT MIN(date), MAX(date) FROM all_sessions WHERE date IS NOT NULL
 		- MIN "2016-08-01" and MAX "2017-08-01" Range is 365 days many years ago
+  	- v2productname, and name columns from all_sessions, products, and sales_reports are Different
+   		|----------- name ----------- | count |
+     		| 16 oz. Hot and Cold Tumbler |   14  |
+     		| - 16 oz. Hot/Cold Tumbler - |   7   |
+     	See image: qa_consistency.jpg
 10. Uniqueness: failed
     - Not unique
     - many duplicate records in dataset
