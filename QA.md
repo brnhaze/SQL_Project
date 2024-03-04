@@ -15,37 +15,39 @@
    		- SELECT timeonsite FROM all_sessions WHERE timeonsite IS NULL -- 3300 values
    	 	- SELECT timeonsite FROM all_sessions WHERE timeonsite IS NULL -- 3300 values
    	- city, all_sessions contained 'not available in demo dataset' as value
-3. Validity (confirmity): failed
+2. Validity (confirmity): failed
    - Missing confirmity and many data values
    - e.g.,
    	- productSKU, some values missing 4 to 6 first sequence of Letters
    - e.g.,
    	- date, all_sessions
    	- SELECT date, COUNT(*) as occurrence_count FROM all_sessions WHERE NOT date::TEXT != '^\d{4}-\d{2}-\d{2}$' GROUP 		BY date ORDER BY date -- 
-4. Accuracy: failed
+3. Accuracy: failed
    - values did not represent real-world values
-5. Timeliness: failed
+4. Timeliness: failed
    - data values dates were out-of-date
    - analytics table took some to query results
-9. Consistency: failed
+5. Consistency: failed
 	- some values non-english
 		- e.g., pagetitle, all_sessions
 	- date, all_sessions
 		- SELECT MIN(date), MAX(date) FROM all_sessions WHERE date IS NOT NULL
 		- MIN "2016-08-01" and MAX "2017-08-01" Range is 365 days many years ago
   	- v2productname, and name columns from all_sessions, products, and sales_reports are Different
-   		|----------- name ----------- | count |
-     		| 16 oz. Hot and Cold Tumbler |   14  |
-     		| - 16 oz. Hot/Cold Tumbler - |   7   |
-     	See image: qa_consistency.jpg
-10. Uniqueness: failed
+
+|----------- name ----------- | count |
+| 16 oz. Hot and Cold Tumbler |   14  |
+| - 16 oz. Hot/Cold Tumbler - |   7   |
+     	See image: [qa_consistency.jpg](https://github.com/brnhaze/SQL_Project/blob/main/qa_consistency.jpg)
+      
+6. Uniqueness: failed
     - Not unique
     - many duplicate records in dataset
 
 
 # QA Process:
 - Describe your QA process and include the SQL queries used to execute it.
- - Please see 3 Data Profiling_validation_Cleansing.sql for details of more queries and notes used for QA Process
+ - Please see [3 Data Profiling_validation_Cleansing.sql](https://github.com/brnhaze/SQL_Project/blob/main/3%20Data%20Profiling_Validation_Cleansing.sql) for details of more queries and notes used for QA Process
  
 ## Example: productsku
      - Attempting to find sequence of varying characters
@@ -141,5 +143,5 @@
 	HAVING COUNT(*) > 1
 	ORDER BY occurences DESC, productsku, productname
 
- - See image QA_1
- - Citation: "occurences" idea taken from (https://chat.openai.com/)
+ - See image [QA_1](https://github.com/brnhaze/SQL_Project/blob/main/QA_1.jpg)
+ - Citation: "occurences" idea taken from [chatGPT](https://chat.openai.com/)
