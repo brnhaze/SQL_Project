@@ -12,7 +12,7 @@
 - analytics.csv
   - analytics.csv file was too large
     - Could not push to github
-    - please use script to create columns: nalytics_too_big_script.sql if needed
+    - please use script to create columns: nalytics_too_big_script.sql if needed or download dB files (see above)
 - products.csv
 - sales_by_sky.csv
 - sales_report.csv
@@ -34,7 +34,7 @@
 
 ## Images
 - schema.png
-- Q1_Image.jpg
+- Q1_Image.jpg [GithubP(https://github.com/brnhaze/SQL_Project/blob/main/Q1_Image.jpg)
 - Q2_Image.jpg
 - Q3_Image.jpg
 - Q4_Image.jpg
