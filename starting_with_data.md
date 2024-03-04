@@ -18,7 +18,7 @@
     WHERE fullvisitorid = 9087906
   
   Answer: USA
-  See starting_with_data_q1.jpg
+  See [starting_with_data_q1.jpg](https://github.com/brnhaze/SQL_Project/blob/main/See%20starting_with_data_q1.jpg)
 
 
 
@@ -47,7 +47,7 @@
   Answer:
   - UNON ALL method was more efficient; I had to deal with the difference in number of columns by using NULL to missing oclumns or informatoin.
 
-  See  See starting_with_data_q2.jpg
+  See  See [starting_with_data_q2.jpg](https://github.com/brnhaze/SQL_Project/blob/main/See%20starting_with_data_q2.jpg)
 
 
 
@@ -63,7 +63,7 @@
   
   Answer: productsku GGOEGOAQ012899 total_ordered was 456
 
-  See starting_with_data_q3.jpg
+  See [starting_with_data_q3.jpg](https://github.com/brnhaze/SQL_Project/blob/main/See%20starting_with_data_q3.jpg)
 
 
 
@@ -76,7 +76,7 @@
   
   Answer: Average sentiment score .39 and average sentiment magnitude .81
 
-   See starting_with_data_q4.jpg
+   See [starting_with_data_q4.jpg](https://github.com/brnhaze/SQL_Project/blob/main/See%20starting_with_data_q4.jpg)
 
 
 
@@ -100,7 +100,7 @@
 - Variance: 1740.90
   - The average spread of values from the mean
  
- See starting_with_data_q5.jpg
+ See [starting_with_data_q5.jpg](https://github.com/brnhaze/SQL_Project/blob/main/See%20starting_with_data_q5.jpg)
 
 
 
@@ -131,8 +131,8 @@
 
     SELECT * FROM country_currency
 
-  See country_currency.csv
+  See [country_currency.csv](https://drive.google.com/drive/folders/1anbrJes9Whjes4GUKg2Sx-eD-vVLgcw8?usp=drive_link)
 
-  See country_currency_image.jpg
+  See [country_currency_image.jpg]()
 
   
