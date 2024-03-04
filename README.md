@@ -4,15 +4,11 @@
 ## Information
 - SQL_Project: https://github.com/brnhaze/SQL_Project
 - Generated from: lighthouse-labs/Final-Project-SQL
-- ecommerce database (dB) .csv files:
-  - https://drive.google.com/drive/folders/1anbrJes9Whjes4GUKg2Sx-eD-vVLgcw8?usp=drive_link
+- ecommerce database (dB) .csv files: [Click Me](https://drive.google.com/drive/folders/1anbrJes9Whjes4GUKg2Sx-eD-vVLgcw8?)usp=drive_link
 
 ## CSV Files
 - all_sessions.csv
 - analytics.csv
-  - analytics.csv file was too large
-    - Could not push to github
-    - please use script to create columns: nalytics_too_big_script.sql if needed or download dB files (see above)
 - products.csv
 - sales_by_sky.csv
 - sales_report.csv
@@ -28,9 +24,9 @@
  
 ## Scripts
 - [3 Data Profiling_Validation_Cleansing.sql](https://github.com/brnhaze/SQL_Project/blob/main/3%20Data%20Profiling_Validation_Cleansing.sql)
-- starting_with_questions.sql
-- 4 country_currencycode_scripting.sql
-- 5 relationships.sql
+- [starting_with_questions.sql]()
+- [4 country_currencycode_scripting.sql]()
+- [5 relationships.sql]()
 
 ## Images
 - schema.png
