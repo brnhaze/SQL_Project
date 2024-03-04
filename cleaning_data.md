@@ -1,4 +1,5 @@
 #What issues will you address by cleaning the data?
+Please see [Data Profiling, Validation, and Cleansing file](https://github.com/brnhaze/SQL_Project/blob/main/3%20Data%20Profiling_Validation_Cleansing.sql)
 
 ##Potential data issues encounted
 
