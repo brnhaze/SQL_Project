@@ -133,6 +133,6 @@
 
   See [country_currency.csv](https://drive.google.com/drive/folders/1anbrJes9Whjes4GUKg2Sx-eD-vVLgcw8?usp=drive_link)
 
-  See [country_currency_image.jpg]()
+  See [country_currency_image.jpg](https://github.com/brnhaze/SQL_Project/blob/main/country_currency_image.jpg)
 
   
