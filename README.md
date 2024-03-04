@@ -27,19 +27,19 @@
   - IT_4
  
 ## Scripts
-- 3 Data Profiling_Validation_Cleansing.sql
+- [3 Data Profiling_Validation_Cleansing.sql](https://github.com/brnhaze/SQL_Project/blob/main/3%20Data%20Profiling_Validation_Cleansing.sql)
 - starting_with_questions.sql
 - 4 country_currencycode_scripting.sql
 - 5 relationships.sql
 
 ## Images
 - schema.png
-- Q1_Image.jpg(https://github.com/brnhaze/SQL_Project/blob/main/Q1_Image.jpg)
-- Q2_Image.jpg
-- Q3_Image.jpg
-- Q4_Image.jpg
-- Q5_Image.jpg
-- QA_1
+- [Q1_Image.jpg](https://github.com/brnhaze/SQL_Project/blob/main/Q1_Image.jpg)
+- [Q2_Image.jpg](https://github.com/brnhaze/SQL_Project/blob/main/Q2_Image.jpg)
+- [Q3_Image.jpg](https://github.com/brnhaze/SQL_Project/blob/main/Q3_Image.jpg)
+- [Q4_Image.jpg](https://github.com/brnhaze/SQL_Project/blob/main/Q4_Image.jpg)
+- [Q5_Image.jpg](https://github.com/brnhaze/SQL_Project/blob/main/Q5_Image.jpg)
+- [QA_1](https://github.com/brnhaze/SQL_Project/blob/main/QA_1.jpg)
 
 ## Project Description
   # Extracting data from a SQL database
