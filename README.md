@@ -61,7 +61,7 @@
   2. [cleaning_data.md file](https://github.com/brnhaze/SQL_Project/blob/main/cleaning_data.md)
     - Fill out this file with a description of the issues that will be addressed by cleaning the data
     - Include the queries used to clean the data
-  3.[starting_with_questions.md file](https://github.com/brnhaze/SQL_Project/blob/main/starting_with_questions.md)
+  3. [starting_with_questions.md file](https://github.com/brnhaze/SQL_Project/blob/main/starting_with_questions.md)
     - Provide the answer to the 5 questions and the queries used to answer each question
   4. [startingwithdata.md file](https://github.com/brnhaze/SQL_Project/blob/main/starting_with_data.md)
     - Provide the 3 - 5 new questions you decided could be answered with the data
