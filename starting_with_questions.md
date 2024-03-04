@@ -13,7 +13,7 @@ SQL Queries:
     ORDER BY transactionrevenue DESC
     LIMIT 5
     
-Answer: See Q1_Image
+Answer: See [Q1_Image](https://github.com/brnhaze/SQL_Project/blob/main/Q1_Image.jpg)
 
 | city          | country       | Transactionrevenue |
 |:-------------:|:-------------:| :----------------: |
@@ -42,7 +42,7 @@ SQL Queries:
     	AND p.orderedquantity IS NOT NULL
     GROUP BY orderedquantity, city, country, ass.fullvisitorid
 
-Answer: See Q2_Image
+Answer: See [Q2_Image](https://github.com/brnhaze/SQL_Project/blob/main/Q2_Image.jpg)
 
 **Question 3: Is there any pattern in the types (product categories) of products ordered from visitors in each city and country?**
 
@@ -61,7 +61,7 @@ SQL Queries:
         AND ass.v2productcategory IS NOT NULL
     GROUP BY ass.country, ass.city, ass.fullvisitorid
 
-Answer: No ? See Q3_Image
+Answer: No ? [See Q3_Image](https://github.com/brnhaze/SQL_Project/blob/main/Q3_Image.jpg)
 
 **Question 4: What is the top-selling product from each city/country? Can we find any pattern worthy of noting in the products sold?**
 
@@ -81,7 +81,7 @@ SQL Queries:
     FROM ProductRanks
     WHERE product_rank = 1
 
-Answer: See Q4_Image
+Answer: See [Q4_Image](https://github.com/brnhaze/SQL_Project/blob/main/Q4_Image.jpg)
 
 **Question 5: Can we summarize the impact of revenue generated from each city/country?**
 
@@ -102,7 +102,7 @@ SQL Queries:
     	AND total_rev > 0
     ORDER BY total_rev DESC
 
-Answer: See Q5_Image
+Answer: See [Q5_Image](https://github.com/brnhaze/SQL_Project/blob/main/Q5_Image.jpg)
 
 
 
