@@ -4,15 +4,15 @@
 ## Information
 - SQL_Project: https://github.com/brnhaze/SQL_Project
 - Generated from: lighthouse-labs/Final-Project-SQL
-- ecommerce database (dB) .csv files: [Click Me](https://drive.google.com/drive/folders/1anbrJes9Whjes4GUKg2Sx-eD-vVLgcw8?)usp=drive_link
+- ecommerce database (dB) .csv files: [Click Me](https://drive.google.com/drive/folders/1anbrJes9Whjes4GUKg2Sx-eD-vVLgcw8?usp=drive_link)
 
 ## CSV Files
-- all_sessions.csv
-- analytics.csv
-- products.csv
-- sales_by_sky.csv
-- sales_report.csv
-- country_currency.csv
+- [all_sessions.csv](https://drive.google.com/drive/folders/1anbrJes9Whjes4GUKg2Sx-eD-vVLgcw8?usp=drive_link)
+- [analytics.csv](https://drive.google.com/drive/folders/1anbrJes9Whjes4GUKg2Sx-eD-vVLgcw8?usp=drive_link)
+- [products.csv](https://drive.google.com/drive/folders/1anbrJes9Whjes4GUKg2Sx-eD-vVLgcw8?usp=drive_link)
+- [sales_by_sky.csv](https://drive.google.com/drive/folders/1anbrJes9Whjes4GUKg2Sx-eD-vVLgcw8?usp=drive_link)
+- [sales_report.csv](https://drive.google.com/drive/folders/1anbrJes9Whjes4GUKg2Sx-eD-vVLgcw8?usp=drive_link)
+- [country_currency.csv](https://drive.google.com/drive/folders/1anbrJes9Whjes4GUKg2Sx-eD-vVLgcw8?usp=drive_link)
 
 ## Created Tables
 - country_currency
@@ -24,9 +24,9 @@
  
 ## Scripts
 - [3 Data Profiling_Validation_Cleansing.sql](https://github.com/brnhaze/SQL_Project/blob/main/3%20Data%20Profiling_Validation_Cleansing.sql)
-- [starting_with_questions.sql]()
-- [4 country_currencycode_scripting.sql]()
-- [5 relationships.sql]()
+- [starting_with_questions.sql](https://github.com/brnhaze/SQL_Project/blob/main/starting_with_questions.sql)
+- [4 country_currencycode_scripting.sql](https://github.com/brnhaze/SQL_Project/blob/main/4%20country_currencycode_script.sql)
+- [5 relationships.sql](https://github.com/brnhaze/SQL_Project/blob/main/5%20relationships.sql)
 
 ## Images
 - schema.png
@@ -58,18 +58,18 @@
 ## Submission Guidelines
   1. README.md file
     - This file should be an overview of your project, covering roughly the same points as your presentation
-  2. cleaning_data.md file
+  2. [cleaning_data.md file](https://github.com/brnhaze/SQL_Project/blob/main/cleaning_data.md)
     - Fill out this file with a description of the issues that will be addressed by cleaning the data
     - Include the queries used to clean the data
-  3. startingwithquestions.md file
+  3.[starting_with_questions.md file](https://github.com/brnhaze/SQL_Project/blob/main/starting_with_questions.md)
     - Provide the answer to the 5 questions and the queries used to answer each question
-  4. startingwithdata.md file
+  4. [startingwithdata.md file](https://github.com/brnhaze/SQL_Project/blob/main/starting_with_data.md)
     - Provide the 3 - 5 new questions you decided could be answered with the data
     - Include the answer to each question and the accompanying queries used to obtain the answer
-  5. QA.md file
+  5. [QA.md file](https://github.com/brnhaze/SQL_Project/blob/main/QA.md)
     - Identify and describe your risk areas
     - Develop and execute a QA process to address the risk areas identified, providing the SQL queries used to implement
-  6. schema.png file
+  6. [schema.png file](https://github.com/brnhaze/SQL_Project/blob/main/schema.png) Or [ERD_schematic](https://github.com/brnhaze/SQL_Project/blob/main/ERD_schamatic.pgerd)
     - This file should contain the ERD of the database
 
 ## Evaluation Ruberic
