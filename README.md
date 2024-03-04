@@ -34,7 +34,7 @@
 
 ## Images
 - schema.png
-- Q1_Image.jpg [GithubP(https://github.com/brnhaze/SQL_Project/blob/main/Q1_Image.jpg)
+- Q1_Image.jpg(https://github.com/brnhaze/SQL_Project/blob/main/Q1_Image.jpg)
 - Q2_Image.jpg
 - Q3_Image.jpg
 - Q4_Image.jpg
